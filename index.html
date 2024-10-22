@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Alert and Content Change</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #message {
+            margin-top: 20px;
+            font-size: 20px;
+            color: #333;
+        }
+    </style>
+    <script>
+        function showAlertAndAddText() {
+            // Show the modal alert
+            alert('Test alert.');
+
+            // After the alert is dismissed, add "hello world" to the page
+            const messageDiv = document.getElementById('message');
+            messageDiv.textContent = 'hello world';
+        }
+    </script>
+</head>
+<body>
+    <h1>Click the Link Below</h1>
+    <a href="#" onclick="showAlertAndAddText(); return false;">Click me</a>
+    <div id="message"></div>
+</body>
+</html>
